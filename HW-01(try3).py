@@ -1,11 +1,11 @@
 def format_strings(*args):
     combined_string = ''.join(args)
     formatted_string = combined_string.upper()
-    if '' in combined_string:
-        formatted_string = formatted_string.replace(' ','-')
+    if ' ' in combined_string:
+        formatted_string = formatted_string.replace(' ', '-')
     return formatted_string
 
-if __name__ == '_main_':
+if __name__ == '__main__':
     result = format_strings("Hello", "world", "this", "is", "a", "test")
     print(result)  # Output: "HELLOWORLDTHISISATEST"
 
